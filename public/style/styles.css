@@ -1,0 +1,598 @@
+
+
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+p {
+	font-family: Source Sans Pro;
+	font-weight: 400;
+}
+
+a {
+	font-family: Arvo;
+	font-weight: 700;
+	color: #000;
+	text-decoration: none;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+	padding-left: 4px;
+	padding-right: 4px;
+	transition: color 0.2s ease;
+}
+
+
+.bild img {
+	width: 100%;
+	margin: 0px auto;
+}
+.bild {
+	width: 55%;
+	margin: 0px auto;
+}
+.alles {
+	width: 900px;
+	margin: 0px auto;
+}
+footer a {
+	font-size: 16px;
+	font-family: Source Sans Pro;
+	border: none;
+	color: #FFF;
+	font-weight: 500;
+	padding: 0px;
+}
+.Bildalles {
+	width: 883px;
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 300px;
+}
+.Bild_handy {
+}
+
+.current_page_item {
+	color:#258DD3;
+	border-color:#258DD3
+}
+
+.handle {
+	width: 100%;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: #FFF;
+	display: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #09F;
+	border-left: 3px solid #09F;
+	border-right: 3px solid #09F;
+}
+h1 {
+	font-family: Arvo;
+}
+
+
+.info {
+	width: 559px;
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-top: 90px;
+	margin-bottom: 100px;
+	float: left;
+}
+.info p {
+	width: 500px;
+}
+.kontakt_alles {
+	margin: 0px auto;
+	width: 500px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+.text {
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+	margin-top: 150px;
+	width: 300px;
+	width: 560px;
+	margin-bottom: 150px;
+}
+.datenschutz {
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+	margin-top: 150px;
+	width: 300px;
+	width: 780px;
+	margin-bottom: 150px;
+}
+.datenschutz a {
+	font-family: Arvo;
+	font-weight: 400;
+	color: #0BF;
+	text-decoration: none;
+	border-left: 3px  #000;
+	border-right: 3px  #000;
+	padding-left: 4px;
+	padding-right: 4px;
+	transition: color 0.2s ease;
+}
+.test p {
+	font-family: Source Sans Pro;
+	font-size: 15px;
+	text-indent: 40px;
+}
+.kontakt {
+	font-family: Source Sans Pro;
+	font-weight: 400;
+	text-align: left;
+	margin: 0px auto;
+}
+.daten {
+	text-align: left;
+	margin: 0px auto;
+	float: left;
+	margin-right: 50px;
+}
+.text p {
+}
+.blau {
+	margin-top: 110px;
+	background-color: #258DD3;
+	width: 300px;
+	padding: 20px;
+	float: right;
+}
+.blautext {
+	color: #FFF;
+}
+.blautext a {
+	color: #FFF;
+	border: none;
+	font-size: 16px;
+	font-family: Source Sans Pro;
+	font-weight: 400;
+}
+.blautext a :hover {
+	text-decoration: underline;
+}
+h2 {
+	font-family: Arvo;
+	font-size: 20px;
+}
+ul {
+	margin: 0px auto;
+	width: 715px;
+	text-decoration: none;
+}
+li {
+	text-decoration: none;
+	float: left;
+	margin: 0px 7px;
+	list-style: none;
+}
+ol {
+	display: block;
+	font-family: Source Sans Pro;
+	heigth: auto;
+}
+ol li {
+	font-family: Source Sans Pro;
+	margin: 0px 45px;
+	list-style: decimal;
+	width: 715px;
+}
+nav {
+	margin-top: 30px;
+}
+header {
+}
+.Bilda {
+	background-image: url("../img/blau.png");
+	background-repeat: no-repeat;
+	height: 300px;
+	background-size: 369px auto;
+	float: left;
+	width: 400px;
+	position: absolute;
+}
+.Bilda:hover {
+	background-position: 0px -302px;
+}
+.Bildb {
+	background-image: url("../img/rot.png");
+	background-repeat: no-repeat;
+	height: 300px;
+	background-size: 467px auto;
+	float: left;
+	width: 534px;
+	position: absolute;
+	margin-left: 215px;
+}
+.Bildc {
+	background-image: url("../img/gelb.png");
+	background-repeat: no-repeat;
+	height: 300px;
+	background-size: 352px auto;
+	float: left;
+	width: 353px;
+	position: absolute;
+	margin-left: 530px;
+}
+.Bildc:hover {
+	background-position: 0px -301px;
+}
+.Bildb:hover {
+	background-position: 0px -302px;
+}
+.impressum {
+	text-align: left;
+	width: 780px;
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+.infotext h2 {
+}
+.infotext p {
+}
+footer {
+	background-color: #258DD3;
+	height: 250px;
+	clear: both;
+}
+.infotext {
+	width: 880px;
+	margin: 140px auto 100px;
+}
+.text1 {
+	color: #FFF;
+	margin: auto 40px;
+	float: left;
+}
+.text2 {
+	color: #FFF;
+	margin: auto 40px;
+	float: left;
+}
+.text3 {
+	color: #FFF;
+	margin: auto 0px;
+}
+footer h2 {
+	margin: 0px auto;
+	text-align: center;
+	color: #FFF;
+	font-size: 25px;
+	margin-bottom: 50px;
+	padding-top: 60px;
+}
+footer a:hover {
+	border: none;
+	color: #FFF;
+	font-weight: 600;
+}
+.footertext {
+	width: 643px;
+	margin: 0px auto;
+}
+.text a {
+	border: none;
+	color: #000;
+	font-family: Source Sans Pro;
+	padding: 0px;
+	font-weight: 600;
+	font-size: 16px;
+}
+.text a:hover {
+}
+.pfeile {
+	background-image: url("../img/Pfeil.png");
+	background-repeat: no-repeat;
+	height: 219px;
+	background-size: 760px auto;
+	background-position: 28px center;
+	margin: 0px auto;
+	position: relative;
+	width: 827px;
+	margin-top: -91px;
+	margin-bottom: 100px;
+}
+.Bild_handy img {
+	height: 0px;
+}
+ @media ( max-width: 1024px) {
+.Bildb:hover {
+	background-position: center center;
+}
+.Bildalles {
+	width: 100%;
+}
+.impressum {
+	width: 80%;
+}
+.Bilda {
+	background-image: none;
+	width: 0px;
+	height: 0px;
+	margin: 0px;
+}
+.pfeile {
+	background-image: none;
+	width: 0px;
+	height: 0px;
+	margin: 0px;
+}
+.infotext {
+	margin: 140px auto 40px;
+}
+.Bilda:hover {
+	background-position: center center;
+}
+.Bildc:hover {
+	background-position: center center;
+}
+.Bild_handy {
+}
+.Bild_handy img {
+}
+.Bildb {
+	background-image: url("../img/bilder+pfeil.jpg");
+	margin: 0px auto;
+	width: 100%;
+	background-position: center center;
+	background-size: 80% auto;
+	height: 460px;
+	position: relative;
+}
+.Bildc {
+	background-image: none;
+	width: 0px;
+	height: 0px;
+	margin: 0px;
+}
+.infotext {
+	width: 80%;
+}
+.info p {
+	width: 100%;
+}
+.alles {
+	width: 100%;
+}
+.info {
+	float: none;
+	width: 72%;
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.blau {
+	float: none;
+	width: 65%;
+	margin: 0px auto;
+	margin-bottom: 100px;
+}
+  .Bild_handy img {
+	height: 0px;
+}
+}
+@media ( max-width: 660px) {
+	.bild {
+		width: 100%;
+		margin: 0px auto;
+	}
+
+	.Bildb {
+		height: 325px;
+	}
+
+	.text {
+		width: 80%;
+	}
+
+	a {
+		font-size: 12px;
+	}
+
+	ul {
+		width: 478px;
+	}
+
+	.mail {
+		float: none;
+		margin: 0px auto;
+		width: 115px;
+		text-align: center;
+	}
+
+	footer h2 {
+		width: 85%;
+	}
+
+	footer {
+		height: 380px;
+	}
+
+	.footertext {
+		width: 100%;
+		margin: 0px auto;
+	}
+
+	.text1 {
+		float: none;
+		margin: 0px auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	.text2 {
+		float: none;
+		margin: 0px auto;
+		margin-top: 0px;
+		margin-top: 0px;
+		text-align: center;
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.text3 {
+		float: none;
+		margin: 0px auto;
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.Bild_handy img {
+		height: 0px;
+	}
+
+	.text3 {
+	}
+}
+@media ( max-width: 480px) {
+	.Bilda:hover {
+		background-position: center center;
+	}
+
+	.Bildb {
+		background-image: none;
+		background-position: center center;
+		height: 0px;
+	}
+
+	.infotext {
+		width: 90%;
+	}
+
+	.impressum {
+		width: 90%;
+	}
+
+	.text {
+		width: 90%;
+	}
+
+	.info {
+		width: 90%;
+	}
+
+	.blau {
+		width: 82%;
+	}
+
+	.footertext {
+		height: 220px;
+		background-color: #258DD3;
+	}
+
+	nav ul {
+		overflow: hidden;
+		color: #000;
+		padding: 0px;
+		text-align: center;
+		margin: 0px;
+		transition: max-height 0.4s ease 0s !important;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		text-align: left;
+		padding: 10px;
+	}
+
+	.showing {
+		max-height: 12em;
+		width: 150px;
+	}
+
+	nav ul {
+		max-height: 0;
+		margin: 0px;
+		height: 260px;
+		margin: 0px;
+	}
+
+	.handle {
+		display: block;
+		color: #000;
+		font-size: 20px;
+		background: #FFF none repeat scroll 0% 0%;
+		font-family: Arvo;
+		font-weight: 600;
+		padding: 15px 21px;
+	}
+
+	nav {
+		margin-top: 0px;
+	}
+
+	.infotext {
+		margin: 20px auto 40px;
+	}
+
+	a {
+		font-family: Arvo;
+		font-weight: 700;
+		color: #000;
+		text-decoration: none;
+		border-left: 0px;
+		border-right: 0px;
+		padding-left: 8px;
+		padding-right: 8px;
+		transition: none;
+	}
+
+	a:hover {
+		border: 0px;
+		color: #000;
+	}
+
+	.info {
+		margin-top: 0px;
+	}
+
+	.text {
+		margin-top: 10px;
+		margin-bottom: 35px;
+	}
+
+	.impressum {
+		margin-top: 25px;
+	}
+
+	.Bild_handy img {
+		height: 100%;
+	}
+
+	.Bild_handy {
+		height: 100%;
+	}
+
+	.Bildalles {
+		width: 100%;
+		height: 0px;
+		margin: 0px;
+	}
+}
+
