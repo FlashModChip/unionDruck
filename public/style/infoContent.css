@@ -2,7 +2,7 @@ main {
 	display: grid;
 	grid-template-areas: 	"text gap onSide";
 
-	grid-template-columns: 	2fr 30px 1fr;
+	grid-template-columns: 	2fr 30px 1.2fr;
 	grid-template-rows: 	auto;
 }
 
@@ -17,10 +17,8 @@ main {
 	align-self: start;
 	margin-top: 110px;
 	background-color: #258DD3;
-	width: 300px;
 	padding: 20px;
 	margin: 0px auto;
-
 }
 
 .blautext {

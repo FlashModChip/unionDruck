@@ -35,12 +35,26 @@ class AnfrageController extends Controller
      */
     public function store(Request $request)
     {
-//        die('hallo');
-//        $anfrage1 = new Anfrage();
-//        $storedName = $request->session()->get('benName');
-        session(['benName' => $request->benName]);
-//
-        return view('form/formular2');
+
+        $seiten = $request->seitenzahl;
+        session()->put('prodName', $request->prodName);
+        session()->put('formata', $request->formata);
+        session()->put('seitenzahl', $request->seitenzahl);
+        session()->put('papierSorte', $request->papierSorte);
+        session()->put('auflage', $request->auflage);
+        session()->put('seitenFarben', $request->seite);
+
+        session()->put('benName', $request->benName);
+        session()->put('firmName', $request->firmName);
+        session()->put('adressStreet', $request->adressStreet);
+        session()->put('adressPLZ', $request->adressPLZ);
+        session()->put('telefon', $request->telefon);
+        session()->put('email', $request->email);
+        session()->put('drucktermin', $request->drucktermin);
+        session()->put('kommentar', $request->kommentar);
+
+//        dd($request->seite);
+        return view('form/formular2')->with('seiten', $seiten);
     }
 
     /**

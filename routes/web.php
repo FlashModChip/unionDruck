@@ -15,17 +15,28 @@ Route::get('/daten', function () {
     ]);
 
 });
-Route::get('/formular2', 'AnfrageController@show');
 
-Route::post('/formular2', 'AnfrageController@store');
-
-//Route::resource('/posts', 'AnfrageController.php');
-Route::get('/articles/{article}', 'ArticlesController@show');
-//Route::view('/daten', 'daten');
 Route::view('/impressum', 'impressum');
 Route::view('/info', 'info');
 Route::view('/datenschutz', 'datenschutz');
+
+//Formular
 Route::view('/testform', 'form/testform');
-Auth::routes();
+Route::post('/formular2', 'AnfrageController@store');
+//Formular PDF
+Route::get('generate-pdf','PDFController@generatePDF');
+
+
+Route::get('sendeAnfrage',function (){
+//   die('hallo');
+    Mail::to('satz@udb.de')->send(new \App\Mail\AssignmentCreated(session()->benName,'satz@udb.de'));
+    return view('home');
+});
+
+Route::get('myPDF', function() {
+    return view('myPDF');
+});
+
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

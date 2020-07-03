@@ -1,24 +1,57 @@
 @extends ('layout')
-
+<link href="style/anfrageFormContent2.css" rel="stylesheet" type="text/css"/>
 @section ('content')
 
+    <h1 class="headerText">Anfrageformular</h1>
 
-    <h2>Anfrageformular</h2>
+    <h4>Produkt</h4>
+    <div class="formBlock">
+        <p class="atab"><span class="bezeichnung ">Produktname: </span> {{ session()->get('prodName') }}</p>
+        <p class="atab"><span class="bezeichnung">Format: </span>   {{ session()->get('formata') }}</p>
+        <p><span class="bezeichnung">Seitenzahl: </span> {{ session()->get('seitenzahl') }}</p>
+        <p><span class="bezeichnung">Papiersorte: </span> {{ session()->get('papierSorte') }}</p>
+        <p><span class="bezeichnung">Auflage: </span>{{ session()->get('auflage') }}</p>
 
-    <form action="formular2" method="post" id="form2">
-        @csrf
-        Name:
-        <input type="text" name="benName" size="20" maxlength="30"/> <br/>
-        Firma:
-        <input type="text" name="firmName" size="20" maxlength="30"/><br/>
-        Produktname:
-        <input type="text" name="prodName" size="20" maxlength="30"/><br/>
-        <input type="submit" value="weiter" />
-    </form>
-{{--    <p>{{session('benName')}}</p>--}}
+        <p class="bezeichnung">Farbigkeit: </p>
+        <div class="prodFarben">
+            @for ($i = 1; $i < $seiten+1; $i++)
+                @if ($i < (($seiten+1) / 2))
+                    <p class="linkesElem"> <span class="bezeichnung">Seite {{ $i }}: </span> {{session()->get('seitenFarben')[$i]}} </p>
+                @else
+                    <p class="rechtesElem"><span class="bezeichnung">Seite {{ $i }}: </span> {{session()->get('seitenFarben')[$i]}} </p>
+                @endif
+            @endfor
+        </div>
+    </div>
 
-{{--        echo "Ihre Eingaben <br />\n";--}}
-{{--        echo "Vorname: {$_POST['benName']}<br />\n";--}}
-{{--        echo "Firma: {$_POST['firmName']}<br />\n";--}}
+
+    <h4>Kontaktdaten</h4>
+    <div class="formBlock">
+        <p><span class="bezeichnung">Antragsteller: </span> {{ session()->get('benName') }}</p>
+        <p><span class="bezeichnung">Firma: </span> {{ session()->get('firmName') }}</p>
+
+        <p class="bezeichnung">Adresse: </p>
+        <p> {{ session()->get('adressStreet') }}</p>
+        <p> {{ session()->get('adressPLZ') }}</p>
+        <p><span class="bezeichnung">Telefon: </span> {{ session()->get('telefon') }}</p>
+        <p><span class="bezeichnung">Email: </span> {{ session()->get('email') }}</p>
+
+        @if (session()->get('drucktermin'))
+            <p><span class="bezeichnung">Drucktermin: </span> {{ session()->get('drucktermin') }}</p>
+        @endif
+        @if (session()->get('kommentar'))
+            <p><span class="bezeichnung">Kommentar: </span>{{ session()->get('kommentar') }}</p>
+        @endif
+    </div>
+
+    <div id="buttons">
+        <div class="buttonDiv">
+            <a id="back" href="{{ URL::previous() }}" class="btn btn-warning"> <i class="fas fa-arrow-left"></i> zurück </a>
+        </div>
+        <div class="buttonDiv">
+
+            <a id="back" href="sendeAnfrage" class="btn btn-warning"> <i class="fas fa-arrow-left"></i> senden </a>
+        </div>
+    </div>
 
 @endsection('content')

@@ -39,7 +39,6 @@
                     <p>Storkower Straße 127A+129<br>
                         D - 10407 Berlin</p>
 
-
                     <p>Tel.: +49 (0)30 42 84 62-0<br>
                         Fax: +49 (0)30 42 84 62-56</p>
 
@@ -48,20 +47,20 @@
             </div>
         </footer>
     </div>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+{{--<script>--}}
+{{--    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){--}}
+{{--        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),--}}
+{{--        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)--}}
+{{--    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');--}}
 
-    ga('create', 'UA-97744217-1', 'auto');
-    ga('send', 'pageview');
+{{--    ga('create', 'UA-97744217-1', 'auto');--}}
+{{--    ga('send', 'pageview');--}}
 
 
-    $('.handle').on('click', function(){
-        $('nav ul').toggleClass('showing');
-    });
-</script>
+{{--    $('.handle').on('click', function(){--}}
+{{--        $('nav ul').toggleClass('showing');--}}
+{{--    });--}}
+{{--</script>--}}
 </body>
 </html>
 

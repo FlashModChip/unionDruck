@@ -1,0 +1,71 @@
+main {
+    background-color: aliceblue;
+    padding: 25px;
+    width: 70%;
+    border-radius: 9px;
+    box-shadow: 10px 10px 15px lightgray ;
+}
+
+.formBlock  {
+    padding: 5px 5px 5px 0;
+    margin: 3px 0 10px 0;
+}
+
+.formBlock p {
+    padding: 5px 5px 5px 0;
+}
+
+.bezeichnung {
+    font-family: "Calibri Light";
+}
+
+h4 {
+    margin-top: 15px;
+    font-family: "Calibri";
+    font-size: 16px;
+    color: #95999c;
+}
+
+.prodFarben {
+    width: 40%;
+    display: grid;
+    grid-template-columns: [left] auto [right] auto;;
+    justify-items: center;
+    grid-auto-flow: column;
+}
+
+.linkesElem {
+    grid-column: left;
+
+}
+.rechtesElem {
+    grid-column: right;
+}
+
+#back {
+    border: 0;
+    padding: 0;
+    color: white;
+}
+
+#buttons {
+    display: inline-flex;
+}
+
+.buttonDiv {
+    display: grid;
+    width: 90px;
+    margin: 5px;
+    padding: 5px;
+    /*align-items: center;*/
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.buttonDiv:first-child {
+    background-color: gray;
+}
+
+.buttonDiv:last-child {
+    background-color: #00BBFF;
+}

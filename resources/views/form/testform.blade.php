@@ -28,31 +28,26 @@
             <div class="formBlock">
                 <h4>Format*:</h4>
                 <label class="radio">
-                    <input type="radio" name="format" value="a4">
+                    <input type="radio" name="formata" value="DIN A4">
                     <span class="checkmark"></span>
                     <span>DIN A4</span>
                 </label>
                 <label class="radio">
-                    <input type="radio" name="format" value="halbesBeliner">
+                    <input type="radio" name="formata" value="halbes Beliner">
                     <span class="checkmark"></span>
                     <span>Halbes Berliner</span>
                 </label>
                 <label class="radio">
-                    <input type="radio" name="format" value="berliner">
+                    <input type="radio" name="formata" value="berliner">
                     <span class="checkmark"></span>
                     <span>Berliner</span>
                 </label>
             </div>
 
-
             <div class="formBlock">
                 <h4>Seitenzahl*:</h4>
                 <div id="seitenZahlenDOM">
-{{--                    <label class="radio" id="templateSeitenzahl">--}}
-{{--                        <input type="radio" name="seitenzahl" value="8" checked>--}}
-{{--                        <span class="checkmark"></span>--}}
-{{--                        <span>8</span>--}}
-{{--                    </label>--}}
+                    <p>Bitte zuerst das Format auswählen!</p>
                 </div>
 
             </div>
@@ -60,12 +55,12 @@
             <div class="formBlock">
                 <h4>Papiersorte*:</h4>
                 <label class="radio">
-                    <input type="radio" name="papierSorte" value="45">
+                    <input type="radio" name="papierSorte" value="45 g/qm">
                     <span class="checkmark"></span>
                     <span>45,5 g/qm</span>
                 </label>
                 <label class="radio">
-                    <input type="radio" name="papierSorte" value="52">
+                    <input type="radio" name="papierSorte" value="52 g/qm">
                     <span class="checkmark"></span>
                     <span>52,0 g/qm</span>
                 </label>
@@ -93,7 +88,7 @@
                     </label>
                 </div>
 
-                <div id="seitenFarben">
+                <div id="seitenFarben"><p>Bitte zuerst Seitenzahl auswählen!</p>
                     <div class="column firstCol"></div>
                     <div class="column secondCol"></div>
                 </div>
@@ -113,8 +108,8 @@
             </div>
 
             <div class="formBlock">
-                <h4>Institution/Firma*:</h4>
-                <input type="text" name="firmName" class="rightItem" size="20" maxlength="30" required="required"/><br />
+                <h4>Institution/Firma:</h4>
+                <input type="text" name="firmName" class="rightItem" size="20" maxlength="30" /><br />
             </div>
 
             <div class="formBlock">
@@ -140,8 +135,9 @@
 
             <div class="formBlock">
                 <h4>Kommentar:</h4>
-                <textarea rows="4" cols="60" id="kommentar" placeholder="Ihr Kommentar"  ></textarea><br />
+                <textarea rows="4" cols="60" name="kommentar" id="kommentar" placeholder="Ihr Kommentar"  ></textarea><br />
             </div>
+
 
             <div id="buttonDiv">
                 <input type="reset" value="RESET" />

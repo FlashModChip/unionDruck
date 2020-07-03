@@ -3,7 +3,7 @@ main {
 	grid-template-areas: 	"top top"
 							"form1 sidebar1";
 
-	grid-template-columns: 	[form1] 2fr [side] 1fr;
+	grid-template-columns: 	[form1] 2fr [side] 1.2fr;
 	grid-template-rows: 	[top] auto [bottom] auto;
 	grid-gap: 20px;
 
@@ -30,12 +30,18 @@ fieldset {
 
 #showSide {
 	grid-area: sidebar1;
-	background-color: #00BBFF;
+	background-color: var(--udb-cyan);
 	margin-top: 35px;
 }
 
+#showSideA {
+	color: white;
+	padding: 10px;
+	background-color: var(--udb-cyan);
+}
+
 .formBlock {
-	margin: 20px 0 30px 0;
+	margin: 10px 0 25px 0;
 }
 
 

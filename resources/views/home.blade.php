@@ -5,7 +5,7 @@
 @endsection
 
 @section ('content')
-    {{--    <section>--}}
+
     <div class="infotext">
         <h2>Willkommen in der Union Druckerei Berlin</h2>
         <br>
@@ -23,19 +23,5 @@
     <div class="Bild_handy"><img src="img/460px_slogan.jpg" alt="handy" height="100%" width="100%"></div>
     <div class="pfeile"></div>
 
-    {{--        <div class="structure">--}}
-    {{--            <figure class="fig2">--}}
-    {{--                <img src="img/blau.png" alt="bild">--}}
-    {{--            </figure>--}}
-    {{--            <figure class="fig3">--}}
-    {{--                <img src="img/rot.png" alt="bild">--}}
-    {{--            </figure>--}}
-    {{--            <figure class="fig4">--}}
-    {{--                <img src="img/gelb.png" alt="bild">--}}
-    {{--            </figure>--}}
-    {{--        </div>--}}
-    {{--        <div class="Bild_handy"><img src="img/460px_slogan.jpg" alt="handy" height="100%" width="100%"></div>--}}
-    {{--        <div class="pfeile"></div>--}}
 
-    {{--    </section>--}}
 @endsection('content')
