@@ -246,3 +246,35 @@ input::-webkit-inner-spin-button {
 input[type=number] {
 	-moz-appearance: textfield;
 }
+
+#druckButton {
+	display: grid;
+	justify-content: center;
+	padding: 10px;
+	margin: 10px 0;
+	background-color: #00BBFF;
+	border-radius: 3px;
+}
+
+#druckButton a {
+	color: white;
+}
+
+@media ( max-width: 660px) {
+	header, nav, main, #container, #menu, #headerImageMedia {
+		display: block
+	}
+
+	#showSideA {
+		text-align: center;
+		margin: 20px 0 0 0;
+	}
+
+	textarea, input[type=text], input[type=number], input[type=email], #colorPreset, #buttonDiv {
+		width: 100%;
+	}
+
+	.column {
+		width: 50%;
+	}
+}

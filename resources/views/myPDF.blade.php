@@ -16,8 +16,8 @@
 
     <p class="bezeichnung">Farbigkeit: </p>
     <div class="prodFarben">
-        @for ($i = 1; $i < $seiten+1; $i++)
-            @if ($i < (($seiten+1) / 2))
+        @for ($i = 1; $i < (session('seitenzahl')+1); $i++)
+            @if ($i < ((session('seitenzahl')+1) / 2))
                 <p class="linkesElem"> <span class="bezeichnung">Seite {{ $i }}: </span> {{session()->get('seitenFarben')[$i]}} </p>
             @else
                 <p class="rechtesElem"><span class="bezeichnung">Seite {{ $i }}: </span> {{session()->get('seitenFarben')[$i]}} </p>

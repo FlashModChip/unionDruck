@@ -13,10 +13,10 @@ class PDFController extends Controller
      */
     public function generatePDF()
     {
-        $seiten = session()->get('seitenzahl');
-        $pdf = PDF::loadView('myPDF', $seiten);
+//        $seiten = session()->get('seitenzahl');
+        $pdf = PDF::loadView('myPDF');
 
-        return $pdf->download('itsolutionstuff.pdf');
+        return $pdf->download('Druckanfrage_'.session('benName').'.pdf');
     }
 
     /**

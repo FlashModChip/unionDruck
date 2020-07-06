@@ -79,3 +79,24 @@ main {
 	margin-top: 250px;
 	margin-bottom: 100px;
 }
+
+@media ( max-width: 660px) {
+	header, nav, main, #container, #menu, #headerImageMedia {
+		display: block
+	}
+
+	.bildalles, .pfeile {
+		display: none;
+	}
+
+	.Bild_handy img {
+		height: 100%;
+	}
+
+	.Bild_handy {
+		margin: 20px 0 0 0;
+		display: block;
+		height: 100%;
+	}
+
+}

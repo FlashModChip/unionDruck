@@ -11,6 +11,10 @@
 	margin: 0;
 }
 
+#headerImageMedia {
+	display: none;
+}
+
 .menuBurger {
 	display: none;
 }
@@ -131,6 +135,49 @@ footer a {
 }
 
 /*-------------Media----------------*/
-@media (max-width: 660px) {
+/*@media (max-width: 660px) {*/
+
+/*}*/
+
+/*---------smart Devices------------*/
+@media ( max-width: 660px) {
+	header, nav, main, #container, #menu, #headerImageMedia  {
+		display: block
+	}
+
+	main {
+		margin: 6%;
+		/*text-align: justify;*/
+	}
+
+	#headerImage {
+		display: none;
+	}
+
+	#headerImageMedia {
+		margin: 20px 0 0 0;
+	}
+
+	nav {
+		width: 250px;
+		margin: 10px 6%;
+	}
+
+	footer {
+		text-align: center;
+		height: 250px;
+		padding: 20px 0 40px 0;
+	}
+
+	footer .footerText {
+		display: block;
+	}
+
+	footer p {
+		margin: 10px 0 0 0;
+	}
+	footer h2 {
+		margin: 15px;
+	}
 
 }

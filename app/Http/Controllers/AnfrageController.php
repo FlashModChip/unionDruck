@@ -14,7 +14,8 @@ class AnfrageController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('form/formular2')->with('seiten', session()->get(seitenzahl));
     }
 
     /**

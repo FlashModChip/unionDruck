@@ -1,5 +1,9 @@
 @extends ('layout')
-<link href="style/anfrageFormContent2.css" rel="stylesheet" type="text/css"/>
+
+@section ('head')
+    <link href="style/anfrageFormContent2.css" rel="stylesheet" type="text/css"/>
+    <script src="js/confirmHandler.js" ></script>
+@endsection
 @section ('content')
 
     <h1 class="headerText">Anfrageformular</h1>
@@ -45,13 +49,10 @@
     </div>
 
     <div id="buttons">
-        <div class="buttonDiv">
-            <a id="back" href="{{ URL::previous() }}" class="btn btn-warning"> <i class="fas fa-arrow-left"></i> zurück </a>
-        </div>
-        <div class="buttonDiv">
 
-            <a id="back" href="sendeAnfrage" class="btn btn-warning"> <i class="fas fa-arrow-left"></i> senden </a>
-        </div>
+            <a class="button" href="{{ url()->previous() }}" class="btn btn-warning"> <i class="fas fa-arrow-left"></i> zurück </a>
+        <a  class="button submitButton" href="generate-pdf" class="btn btn-warning">senden </a>
+{{--            <a class="button submitButton" href="sendeAnfrage" class="btn btn-warning"> <i class="fas fa-arrow-left"></i> senden </a>--}}
     </div>
 
 @endsection('content')

@@ -34,3 +34,13 @@ main {
 .blautext a:hover {
 	text-decoration: underline;
 }
+
+@media ( max-width: 660px) {
+	header, nav, main, #container, #menu, #headerImageMedia {
+		display: block
+	}
+
+	.blau {
+		margin: 20px 0 20px 0;
+	}
+}

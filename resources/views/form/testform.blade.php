@@ -2,7 +2,6 @@
 
 @section ('head')
     <link href="style/anfrageFormContent.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="js/lib/jquery-3.5.1.js"></script>
     <script src="js/formHandler.js" ></script>
 @endsection ('head')
 

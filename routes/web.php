@@ -10,7 +10,7 @@ Route::get('/', function () {
 });
 
 Route::get('/daten', function () {
-    return view('daten',[
+    return view('daten', [
         'articles' => App\Article::latest()->get()
     ]);
 
@@ -24,16 +24,16 @@ Route::view('/datenschutz', 'datenschutz');
 Route::view('/testform', 'form/testform');
 Route::post('/formular2', 'AnfrageController@store');
 //Formular PDF
-Route::get('generate-pdf','PDFController@generatePDF');
+Route::get('generate-pdf', 'PDFController@generatePDF');
 
 
-Route::get('sendeAnfrage',function (){
+Route::get('sendeAnfrage', function () {
 //   die('hallo');
-    Mail::to('satz@udb.de')->send(new \App\Mail\AssignmentCreated(session()->benName,'satz@udb.de'));
+    Mail::to('klick-ma@web.de')->send(new \App\Mail\AssignmentCreated(''.session('benName'), 'klick-ma@web.de'));
     return view('home');
 });
 
-Route::get('myPDF', function() {
+Route::get('myPDF', function () {
     return view('myPDF');
 });
 

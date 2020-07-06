@@ -13,8 +13,8 @@
     </div>
 
     <div id="showSideA">
-        <p> Hier können Sie bequem eine Druckanfrage an uns senden und wir melden uns umgehend bei Ihnen!</p>
-        <a id="druckButton" href="testform">DRUCKANFRAGE</a>
+        <p> Hier können Sie bequem eine Druckanfrage an uns senden. <br />Wir melden uns umgehend bei Ihnen!</p>
+        <div id="druckButton"> <a href="testform">DRUCKANFRAGE</a></div>
     </div>
 
 @endsection('content')

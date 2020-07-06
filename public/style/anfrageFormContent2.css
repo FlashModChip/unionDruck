@@ -42,10 +42,18 @@ h4 {
     grid-column: right;
 }
 
-#back {
+.button {
     border: 0;
     padding: 0;
     color: white;
+    background-color: #95999c;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 120px;
+    border-radius: 4px;
+    margin: 10px 10px 0 0;
+    height: 30px;
 }
 
 #buttons {
@@ -57,7 +65,6 @@ h4 {
     width: 90px;
     margin: 5px;
     padding: 5px;
-    /*align-items: center;*/
     justify-content: center;
     border-radius: 4px;
 }
@@ -68,4 +75,14 @@ h4 {
 
 .buttonDiv:last-child {
     background-color: #00BBFF;
+}
+
+@media ( max-width: 660px) {
+    header, nav, main, #container, #menu, #headerImageMedia {
+        display: block
+    }
+
+    .prodFarben {
+        width: 100%;
+    }
 }
