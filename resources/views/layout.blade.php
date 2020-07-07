@@ -5,8 +5,12 @@
     <title>Union Druckerei Berlin</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+{{--    jQuery     --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery-3.5.1.js"></script>
+    <script src="js/mainHandler.js" ></script>
+
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link href="style/styles2.css" rel="stylesheet" type="text/css"/>
     @yield ('head')

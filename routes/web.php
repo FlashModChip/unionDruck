@@ -23,12 +23,12 @@ Route::view('/datenschutz', 'datenschutz');
 //Formular
 Route::view('/testform', 'form/testform');
 Route::post('/formular2', 'AnfrageController@store');
+
 //Formular PDF
 Route::get('generate-pdf', 'PDFController@generatePDF');
 
-
+//Formular Mail
 Route::get('sendeAnfrage', function () {
-//   die('hallo');
     Mail::to('klick-ma@web.de')->send(new \App\Mail\AssignmentCreated(''.session('benName'), 'klick-ma@web.de'));
     return view('home');
 });
@@ -37,6 +37,5 @@ Route::get('myPDF', function () {
     return view('myPDF');
 });
 
-//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
