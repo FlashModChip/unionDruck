@@ -9,13 +9,14 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/daten', function () {
-    return view('daten', [
+Route::get('/datenDB', function () {
+    return view('articles/show', [
         'articles' => App\Article::latest()->get()
     ]);
 
 });
 
+Route::view('/daten', 'daten');
 Route::view('/impressum', 'impressum');
 Route::view('/info', 'info');
 Route::view('/datenschutz', 'datenschutz');
@@ -29,7 +30,7 @@ Route::get('generate-pdf', 'PDFController@generatePDF');
 
 //Formular Mail
 Route::get('sendeAnfrage', function () {
-    Mail::to('klick-ma@web.de')->send(new \App\Mail\AssignmentCreated(''.session('benName'), 'klick-ma@web.de'));
+    Mail::to('klick-ma@web.de')->send(new \App\Mail\AssignmentCreated(' '.session('benName'), 'klick-ma@web.de'));
     return view('home');
 });
 

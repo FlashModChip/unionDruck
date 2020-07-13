@@ -12,7 +12,7 @@
     <script src="js/mainHandler.js" ></script>
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <link href="style/styles2.css" rel="stylesheet" type="text/css"/>
+    <link href="style/mainStyle.css" rel="stylesheet" type="text/css"/>
     @yield ('head')
 </head>
 <body>

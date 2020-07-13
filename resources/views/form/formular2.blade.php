@@ -1,7 +1,7 @@
 @extends ('layout')
 
 @section ('head')
-    <link href="style/anfrageFormContent2.css" rel="stylesheet" type="text/css"/>
+    <link href="style/content/anfrageFormContent2.css" rel="stylesheet" type="text/css"/>
     <script src="js/confirmHandler.js" ></script>
 @endsection
 @section ('content')

@@ -1,31 +1,29 @@
 /* CSS Document */
+/********************************************
+*
+Theme Name: 	UDB
+Theme URI: 		-
+Description:
+Version:		1.0
+Author:			Roman Bauer
+License:		none
+Tags:			CSS, UDB, main grid layout, responsive
+*
+********************************************/
+
 
 /*----------------Colors-------------------*/
 :root {
+	--udb-black: #000;
 	--udb-cyan: #258DD3;
+	--udb-white: #FFF;
 }
+
 
 /*----------------CSS-reset-------------------*/
 * {
 	padding: 0;
 	margin: 0;
-}
-
-#headerImageMedia {
-	display: none;
-}
-
-.menuBurger {
-	display: none;
-}
-
-.Bild_handy {
-	display: none;
-}
-
-p {
-	font-family: Source Sans Pro;
-	font-weight: 400;
 }
 
 a {
@@ -35,13 +33,23 @@ a {
 nav a {
 	font-family: Arvo;
 	font-weight: 700;
-	color: #000;
-	border-left: 3px solid #000;
-	border-right: 3px solid #000;
+	color: var(--udb-black);
+	border-left: 3px solid var(--udb-black);
+	border-right: 3px solid var(--udb-black);
 	padding-left: 4px;
 	padding-right: 4px;
 	transition: color 0.2s ease;
 }
+
+p {
+	font-family: Source Sans Pro;
+	font-weight: 400;
+}
+
+.menuBurger, .Bild_handy, #headerImageMedia {
+	display: none;
+}
+
 
 /*----------------Positioning-------------------*/
 /*Main Grid*/
@@ -85,6 +93,7 @@ footer {
 	height: 100%;
 }
 
+
 /*-------------Navigation----------------*/
 nav {
 	width: 100%;
@@ -103,16 +112,17 @@ nav ul li {
 
 nav a:hover {
 	text-decoration: none;
-	color: #09F;
-	border-left: 3px solid #09F;
-	border-right: 3px solid #09F;
+	color: var(--udb-cyan);
+	border-left: 3px solid var(--udb-cyan);
+	border-right: 3px solid var(--udb-cyan);
 }
+
 
 /*-------------Footer----------------*/
 footer {
 	width: 100%;
 	background-color: var(--udb-cyan);
-	color: #FFF;
+	color: var(--udb-white);
 	align-content: space-evenly;
 }
 
@@ -129,18 +139,15 @@ footer a {
 	font-size: 16px;
 	font-family: Source Sans Pro;
 	border: none;
-	color: #FFF;
+	color: var(--udb-white);
 	font-weight: 500;
 	padding: 0px;
 }
 
-/*-------------Media----------------*/
-/*@media (max-width: 660px) {*/
-
-/*}*/
 
 /*---------smart Devices------------*/
-@media ( max-width: 660px) {
+@media (max-width: 660px) {
+	/*----------------Positioning-------------------*/
 	header, nav, main, #container, #menu, #headerImageMedia  {
 		display: block
 	}
@@ -150,39 +157,16 @@ footer a {
 		/*text-align: justify;*/
 	}
 
-	#headerImage {
-		display: none;
-	}
 
-	#headerImageMedia {
-		margin: 20px 0 0 0;
-	}
-
+	/*---------Navigation------------*/
 	nav {
 		width: 250px;
 		margin: 10px 6%;
 	}
 
-	footer {
-		text-align: center;
-		height: 250px;
-		padding: 20px 0 40px 0;
-	}
-
-	footer .footerText {
-		display: block;
-	}
-
-	footer p {
-		margin: 10px 0 0 0;
-	}
-	footer h2 {
-		margin: 15px;
-	}
-
 	nav ul {
 		overflow: hidden;
-		color: #000;
+		color: var(--udb-black);
 		padding: 0px;
 		text-align: center;
 		margin: 0px;
@@ -207,6 +191,18 @@ footer a {
 		border: none;
 	}
 
+
+	/*---------Navigation DropdownMenu------------*/
+	.handle {
+		display: block;
+		color: var(--udb-black);
+		font-size: 20px;
+		background: var(--udb-white) none repeat scroll 0% 0%;
+		font-family: Arvo;
+		font-weight: 600;
+		padding: 15px 21px;
+	}
+
 	.menuBurger {
 		display: block;
 	}
@@ -216,14 +212,32 @@ footer a {
 		width: 200px;
 	}
 
-	.handle {
+	#headerImage {
+		display: none;
+	}
+
+	#headerImageMedia {
+		margin: 20px 0 0 0;
+	}
+
+
+	/*---------Footer------------*/
+	footer {
+		text-align: center;
+		height: 250px;
+		padding: 20px 0 40px 0;
+	}
+
+	footer h2 {
+		margin: 15px;
+	}
+
+	footer p {
+		margin: 10px 0 0 0;
+	}
+
+	footer .footerText {
 		display: block;
-		color: #000;
-		font-size: 20px;
-		background: #FFF none repeat scroll 0% 0%;
-		font-family: Arvo;
-		font-weight: 600;
-		padding: 15px 21px;
 	}
 
 }

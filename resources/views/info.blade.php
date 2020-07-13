@@ -1,7 +1,7 @@
 @extends ('layout')
 
 @section ('head')
-    <link href="style/infoContent.css" rel="stylesheet" type="text/css"/>
+    <link href="style/content/infoContent.css" rel="stylesheet" type="text/css"/>
 @endsection
 
 @section ('content')

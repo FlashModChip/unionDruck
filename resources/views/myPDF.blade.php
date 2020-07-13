@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Hi</title>
-    <link href="style/anfrageFormContent2.css" rel="stylesheet" type="text/css"/>
+    <link href="style/content/anfrageFormContent2.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <h1 class="headerText">Anfrageformular</h1>

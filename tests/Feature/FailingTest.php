@@ -17,6 +17,6 @@ class FailingTest extends TestCase
     {
         $response = $this->get('/');
 
-        $response->assertStatus(301);
+        $response->assertStatus(200);
     }
 }

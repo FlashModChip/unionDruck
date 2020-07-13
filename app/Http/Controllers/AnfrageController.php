@@ -37,6 +37,7 @@ class AnfrageController extends Controller
     public function store(Request $request)
     {
 
+        Anfrage::setBenName($request->benName);
         $seiten = $request->seitenzahl;
         session()->put('prodName', $request->prodName);
         session()->put('formata', $request->formata);

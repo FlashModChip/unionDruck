@@ -24,7 +24,7 @@ main {
 }
 
 .Bilda {
-	background-image: url("../img/blau.png");
+	background-image: url("../../img/blau.png");
 	background-repeat: no-repeat;
 	height: 300px;
 	background-size: 369px auto;
@@ -36,7 +36,7 @@ main {
 	background-position: 0px -302px;
 }
 .Bildb {
-	background-image: url("../img/rot.png");
+	background-image: url("../../img/rot.png");
 	background-repeat: no-repeat;
 	height: 300px;
 	background-size: 467px auto;
@@ -46,7 +46,7 @@ main {
 	margin-left: 215px;
 }
 .Bildc {
-	background-image: url("../img/gelb.png");
+	background-image: url("../../img/gelb.png");
 	background-repeat: no-repeat;
 	height: 300px;
 	background-size: 352px auto;
@@ -68,7 +68,7 @@ main {
 
 .pfeile {
 	grid-area: bottom2;
-	background-image: url("../img/Pfeil.png");
+	background-image: url("../../img/Pfeil.png");
 	background-repeat: no-repeat;
 	height: 219px;
 	background-size: 760px auto;
