@@ -1,9 +1,14 @@
 # Union Druckerei Berlin
 ### From static to dynamic
-<img src="C:\Users\Brom\Desktop\httpdocs\img\headerbild.png">
+<p align="center"><img src="/unionDruck/public/img/headerbild.png" width="400"></p>
 
+In diesem Projekt wird die Seite der berliner Druckerei  ["Union Druckerei Berlin"][udb.de] in ein PHP-basiertes Framework integriert.
 
+Die zu lösende Aufgabe ist, aus einer statischen Website, die lediglich rein informativen Zweck erfüllt, zusätzliche interaktive und funktionale Möglichkeiten zu integrieren. Dabei soll das fertige Produkt skalierbar und leicht zu warten werden. 
 
+Das Praxisprojekt findet in einer Zeitungsdruckerei namens Union Druckerei Berlin statt. Der Projektteil beschränkt sich auf die Webpräsenz des Betriebes. Zurzeit besteht die Website www.udb.de aus reinen statischen HTML / CSS Seiten. Es sollte um interaktive Elemente erweitert und bei Bedarf komplette HTML Struktur verändert werden. Wünschenswert wäre eine Möglichkeit zur Validierung der gewünschten Druckdaten. 
+
+Programmiert wird in PHP/JS. Das Checken der Druckdaten erfordert das Hochladen der PDF. Je nach Umfang der Umsetzung der interaktiven Elemente, würde noch eine Automatisierung des Workflows in Betracht gezogen werden. Das heißt, die Druckdaten würden größtenteils nach dem Hochladen automatisch vorbereitet werden.  Der Webhoster bietet eine Plattform mit 250 MB Platz, 1 Datenbank und arbeitet mit PHP-Version 7.3~. 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -83,3 +88,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+[udb.de]: http://udb.de
