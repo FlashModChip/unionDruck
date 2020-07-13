@@ -1,6 +1,6 @@
 # Union Druckerei Berlin
 ### From static to dynamic
-<p align="center"><img src="/unionDruck/public/img/headerbild.png" width="400"></p>
+<p align="center"><img src="http://udb.de/img/headerbild.jpg" width="400"></p>
 
 In diesem Projekt wird die Seite der berliner Druckerei  ["Union Druckerei Berlin"][udb.de] in ein PHP-basiertes Framework integriert.
 
